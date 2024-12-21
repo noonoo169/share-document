@@ -107,7 +107,7 @@ label > a :hover {
 }
 .searchBox {
   position: absolute;
-  top: calc(50% - 30px);
+  top: 80px;
   left: 10%;
   height: 60px;
   width: 80%;
@@ -235,10 +235,14 @@ article {
   overflow-y: auto;
 }
 div.box {
+  margin-top: 5em;
   border-radius: 25px;
   background-color: white;
   padding: 20px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+}
+.box1 {
+  margin-top: 0px !important;
 }
 .box .job-row:hover {
   transition: all 100ms ease-in-out;
@@ -435,4 +439,234 @@ mr-4 {
 }
 mr-5 {
   margin-right: 1.25rem;
+}
+
+/* Căn chỉnh form chính */
+/* Form container */
+.form-container {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Khoảng cách giữa các nhóm */
+}
+
+/* Tiêu đề form */
+.section-title {
+  font-size: 2rem;
+  color: #002244;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label */
+.form-label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #002244;
+}
+
+/* Input và Select */
+.form-input,
+.basic_select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Small text */
+.form-hint {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* File Input */
+.form-input-file {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Button */
+.form-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #fb4f14;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color: #d43c0f;
+}
+
+/* Upload title */
+.upload-title {
+  font-size: 1rem;
+}
+
+/* Upload file css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+::selection {
+    color: #fff;
+    background: #6990F2;
+}
+
+.wrapper {
+    margin-top: 20px;
+margin-bottom: 10px;
+padding-bottom: 20px;
+padding-left: 30px;
+padding-right: 30px;
+width: 430px;
+background: #fff;
+border-radius: 5px;
+box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper header {
+    color: #6990F2;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper .custom-form {
+    height: 167px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #6990F2;
+}
+
+.custom-form :where(i, p) {
+    color: #6990F2;
+}
+
+.custom-form i {
+    font-size: 50px;
+}
+
+.custom-form p {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+section .row {
+    margin: 15px;
+    background: #E9F0FF;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .row i {
+    color: #6990F2;
+    font-size: 30px;
+}
+
+section .details span {
+    font-size: 14px;
+}
+
+.progress-area .row .content {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.progress-area .details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+
+.progress-area .content .progress-bar {
+    height: 6px;
+    width: 100%;
+    margin-bottom: 4px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.content .progress-bar .progress {
+    height: 100%;
+    width: 0%;
+    background: #6990F2;
+    border-radius: inherit;
+}
+
+.uploaded-area {
+    max-height: 232px;
+    overflow-y: scroll;
+}
+
+.uploaded-area.onprogress {
+    max-height: 150px;
+}
+
+.uploaded-area::-webkit-scrollbar {
+    width: 0px;
+}
+
+.uploaded-area .row .content {
+    display: flex;
+    align-items: center;
+}
+
+.uploaded-area .row .details {
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+}
+
+.uploaded-area .row .details .size {
+    color: #404040;
+    font-size: 11px;
+}
+
+.uploaded-area i.fa-check {
+    font-size: 16px;
+}
+
+.btn-delete-uploaded-doc {
+  cursor: pointer;
+}
+
+.btn-delete-uploaded-doc:hover {
+  
 }
