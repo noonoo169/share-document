@@ -24,6 +24,14 @@ jobs:
 
       - name: Build with Maven
 #        run: mvn clean install
+#        env:
+#          AZURE_STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }}
+#          AZURE_STORAGE_ACCOUNT_KEY: ${{ secrets.AZURE_STORAGE_ACCOUNT_KEY }}
+#          AZURE_KEY_VAULT_ENDPOINT: ${{ secrets.AZURE_KEY_VAULT_ENDPOINT }}
+#          SPRING_PROFILES_ACTIVE: prod
+#          datasource-username: ${{secrets.DATASOURCE_USERNAME}} # secret from key vault
+#          datasource-password: ${{secrets.DATASOURCE_PASSWORD}}
+#          datasource-url: ${{secrets.DATASOURCE_URL}}
         run: mvn --batch-mode --update-snapshots package -DskipTests
 
       - name: Upload artifact for deployment job
