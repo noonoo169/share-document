@@ -112,7 +112,7 @@ public class DocumentActivityController {
   }
 
   @PostMapping("/upload-to-storage-account")
-  public ResponseEntity<Result> uploadToStorageAccount( // update convert to word later, use 
+  public ResponseEntity<Result> uploadToStorageAccount( // update convert to word later, use
           @RequestParam(name = "documentFile") MultipartFile documentFile) throws Exception {
     try {
       // Kiểm tra định dạng file
