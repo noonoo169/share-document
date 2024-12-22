@@ -105,45 +105,41 @@
 			<artifactId>spring-cloud-azure-starter-storage-blob</artifactId>
 			<version>5.19.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.azure/azure-storage-blob -->
 		<dependency>
 			<groupId>com.azure</groupId>
 			<artifactId>azure-storage-blob</artifactId>
 			<version>12.29.0</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<!-- Convert doc, docx to pdf custom method -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>5.3.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.3.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-scratchpad</artifactId>
 			<version>5.3.0</version>
 		</dependency>
-
-
-		<!-- iTextPDF -->
 		<dependency>
 			<groupId>com.itextpdf</groupId>
 			<artifactId>itextpdf</artifactId>
 			<version>5.5.13.3</version>
 		</dependency>
 
+		<!-- Convert doc, docx to pdf api -->
 		<dependency>
 			<groupId>com.convertapi.client</groupId>
 			<artifactId>convertapi</artifactId>
 			<version>2.12</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.azure.spring</groupId>
 			<artifactId>spring-cloud-azure-starter-keyvault-secrets</artifactId>
